@@ -1,0 +1,11 @@
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\bin\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.deps.json
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\bin\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.runtimeconfig.json
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\bin\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.runtimeconfig.dev.json
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\bin\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.dll
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\bin\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.pdb
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\obj\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.csprojResolveAssemblyReference.cache
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\obj\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\obj\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.AssemblyInfoInputs.cache
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\obj\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.AssemblyInfo.cs
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\obj\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.dll
+C:\Users\Hp\Desktop\Obezite ve Kalori Takip Sitesi\Obezite ve Kalori Takip Sitesi\obj\Debug\netcoreapp2.0\Obezite ve Kalori Takip Sitesi.pdb

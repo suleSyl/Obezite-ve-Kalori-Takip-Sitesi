@@ -15,28 +15,53 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">KaloriTakip.Com</a>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="pull-left visible-md visible-lg">
+                        <div id="logo-img"></div>
+                    </a>
+                    <div class="navbar-brand">
+                        <a asp-area="" asp-controller="Home" asp-action="Index"><h1>KaloriTakip.Com</h1></a>
+                    </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li>
+                            <a id="home-button" asp-area="" asp-controller="Home" asp-action="Index">
+                                <span class="glyphicon glyphicon-home"></span>Ana Sayfa
+                            </a>
+                        </li>
+                        <li>
+                            <a id="calories-button" asp-area="" asp-controller="Home" asp-action="Calories">
+                                <span class="glyphicon glyphicon-cutlery"></span>Kalori Değerleri
+                            </a>
+                        </li>
+                        <li>
+                            <a id="howmany-button" asp-area="" asp-controller="Home" asp-action="HowMany">
+                                <span class="glyphicon glyphicon-question-sign"></span>Kaç Kalori Aldım
+                            </a>
+                        </li>
+                        <li>
+                            <a id="calculations-button" asp-area="" asp-controller="Home" asp-action="Calculations">
+                                <span class="glyphicon glyphicon-plus"></span>Hesaplamalar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <div class="container body-content">
         @RenderBody()
         <hr />

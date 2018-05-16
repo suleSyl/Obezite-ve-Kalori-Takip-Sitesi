@@ -26,10 +26,81 @@
     margin: 15px;
 }
 
+#header-nav {
+    background-color: #ff7f3d;
+    min-height: 90px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 0;
+    border: 0;
+}
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
     /* Hide captions */
     .carousel-caption {
         display: none;
     }
+
+
+}
+
+#logo-img {
+    background: url('../images/food.png') no-repeat;
+    width: 75px;
+    height: 62px;
+    margin: 13px 8px 10px 0;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.navbar-brand {
+    padding-top: 30px;
+}
+
+.navbar-brand h1 { 
+    font-family: 'Kaushan Script', cursive;
+    color: #27a544;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #064e0f;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+    letter-spacing: 3px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 14px;
+}
+
+#nav-list a {
+    color: #ffffff;
+    text-align: center;
+    font-size:1.2em;
+}
+
+#nav-list a:hover {
+    background: #cc0000;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+    margin-right: 10px; 
+    margin-bottom:-3px;
+    vertical-align:bottom;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -21px;
+    margin-bottom: 35px;
 }

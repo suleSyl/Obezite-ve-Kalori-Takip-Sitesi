@@ -15,16 +15,23 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Calories()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Kalori değerleri sayfası";
 
             return View();
         }
 
-        public IActionResult Contact()
+        public IActionResult HowMany()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Kaç kalori aldım sayfası";
+
+            return View();
+        }
+
+        public IActionResult Calculations()
+        {
+            ViewData["Message"] = "Hesaplamalar sayfası";
 
             return View();
         }

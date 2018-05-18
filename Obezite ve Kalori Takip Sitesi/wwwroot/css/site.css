@@ -1,27 +1,15 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: 'Oxygen', sans-serif;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 40px;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
 #qrCode {
     margin: 15px;
 }
@@ -29,20 +17,15 @@
 #header-nav {
     background-color: #ff7f3d;
     min-height: 90px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border-radius: 0;
     border: 0;
 }
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-
-
+    
 }
 
 #logo-img {
@@ -81,7 +64,7 @@
 #nav-list a {
     color: #ffffff;
     text-align: center;
-    font-size:1.2em;
+    font-size: 1.1em;
 }
 
 #nav-list a:hover {
@@ -89,7 +72,7 @@
 }
 
 #nav-list a span {
-    font-size: 1.8em;
+    font-size: 1.7em;
     margin-right: 10px; 
     margin-bottom:-3px;
     vertical-align:bottom;
@@ -104,3 +87,26 @@
     margin-top: -21px;
     margin-bottom: 35px;
 }
+
+/*********************************************END HEADER *************************************************/
+
+tr:nth-child(even) {
+    background-color: #fff2e6;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;    
+    font-size:.9em;
+}
+
+td, th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width:150px;
+}
+
+
+

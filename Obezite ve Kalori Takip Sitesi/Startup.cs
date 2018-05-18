@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Obezite_ve_Kalori_Takip_Sitesi.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Obezite_ve_Kalori_Takip_Sitesi
 {
@@ -21,6 +23,8 @@ namespace Obezite_ve_Kalori_Takip_Sitesi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<FoodContext>(options =>
+        options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddMvc();
         }
 

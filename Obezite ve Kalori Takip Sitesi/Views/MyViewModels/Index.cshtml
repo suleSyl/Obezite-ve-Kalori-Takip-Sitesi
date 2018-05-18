@@ -1,0 +1,205 @@
+﻿@model MyViewModel
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <h3>Meyveler</h3>
+                @Html.DisplayNameFor(model => model.meyveList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.meyveList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.meyveList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>  <!------------------------ end meyve -------------------------------------->
+    <thead>
+        <tr>
+            <th>
+                <h3>Sebzeler</h3>
+                @Html.DisplayNameFor(model => model.sebzeList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sebzeList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.sebzeList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>  <!------------------------ end sebze -------------------------------------->
+    <thead>
+        <tr>
+            <th>
+                <h3>Baklagiller</h3>
+                @Html.DisplayNameFor(model => model.baklagilList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.baklagilList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.baklagilList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>   <!------------------------ end baklagil -------------------------------------->
+    <thead>
+        <tr>
+            <th>
+                <h3>Etler</h3>
+                @Html.DisplayNameFor(model => model.etList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.etList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.etList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>  <!------------------------ end et -------------------------------------->
+    <thead>
+        <tr>
+            <th>
+                <h3>Süt ve Yumurta Ürünleri</h3>
+                @Html.DisplayNameFor(model => model.sütYumurtaList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sütYumurtaList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.sütYumurtaList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>  <!------------------------ end sütYumurta -------------------------------------->
+    <thead>
+        <tr>
+            <th>
+                <h3>Deniz Ürünleri</h3>
+                @Html.DisplayNameFor(model => model.denizÜrünüList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.denizÜrünüList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.denizÜrünüList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>  <!------------------------ end denizürünü -------------------------------------->
+
+    <thead>
+        <tr>
+            <th>
+                <h3>Kuruyemişler</h3>
+                @Html.DisplayNameFor(model => model.kuruyemişList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.kuruyemişList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.kuruyemişList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>  <!------------------------ end kuruyemiş -------------------------------------->
+    <thead>
+        <tr>
+            <th>
+                <h3>Yağlar</h3>
+                @Html.DisplayNameFor(model => model.yağList[0].Yiyecek)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.yağList[0].Kalori)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.yağList)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Yiyecek)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kalori)
+                </td>
+            </tr>
+        }
+    </tbody>  <!------------------------ end yağ -------------------------------------->
+</table>
+

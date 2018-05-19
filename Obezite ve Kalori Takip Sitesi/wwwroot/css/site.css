@@ -2,6 +2,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     font-family: 'Oxygen', sans-serif;
+    margin:0;
 }
 
 .body-content {
@@ -23,9 +24,11 @@
     border: 0;
 }
 
-/* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
-    
+    #img1, #img2, #img3 {
+        width: 330px;
+        margin: 0 auto 15px;
+    }
 }
 
 #logo-img {
@@ -106,7 +109,85 @@ td, th {
     text-align: left;
     padding: 8px;
     width:150px;
+}  /************************************end Kalori Değerleri***********************************************/
+
+* {
+    box-sizing: border-box;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+#img1, #img2, #img3 {    
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin:10px;
+}
+
+#img2{
+    margin-bottom:9px;
+}
+
+.col-md-12 img{
+    height:270px;
+}
+
+.col-md-8 img {
+    height:550px;
+}
+
+.col-md-12{
+    padding:5px;
+}
+
+.col-md-8{
+    padding:5px;
+}
+
+#img1-span, #img2-span, #img3-span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .75;
+    height: 43px;
+}
+
+#img1-span {
+    line-height: 2.1;
+    height:65px;
+    font-size:2.2em;
+}
+
+#img2-span {
+    font-size: 1.4em;
+    line-height:1.90;
+}
+
+#img3-span {
+    font-size: 1.4em;
+    line-height: 1.55;
+    height:65px;
+}
 
 

@@ -219,8 +219,6 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
                 context.Yağlar.Add(yağ);
             }
             context.SaveChanges();    /****************end yağ *************/
-
-
         }
 
         public static void setGenelÜrünler()

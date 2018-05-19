@@ -21,19 +21,8 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Controllers
 
         // GET: MyViewModels
         public IActionResult Index()
-        {
-            var model = new MyViewModel();
-            DbInitializer.setGenelÜrünler();
-            model.baklagilList = DbInitializer.bütünGıdalar.baklagilList;
-            model.denizÜrünüList = DbInitializer.bütünGıdalar.denizÜrünüList;
-            model.etList = DbInitializer.bütünGıdalar.etList;
-            model.kuruyemişList = DbInitializer.bütünGıdalar.kuruyemişList;
-            model.meyveList = DbInitializer.bütünGıdalar.meyveList;
-            model.sebzeList = DbInitializer.bütünGıdalar.sebzeList;
-            model.sütYumurtaList = DbInitializer.bütünGıdalar.sütYumurtaList;
-            model.yağList = DbInitializer.bütünGıdalar.yağList;
-
-            return View(model);
+        {          
+            return View();
         }
 
         // GET: MyViewModels/Details/5

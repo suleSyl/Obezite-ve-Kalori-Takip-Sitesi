@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - KaloriTakip.Com</title>
-
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -44,12 +43,12 @@
                             </a>
                         </li>
                         <li>
-                            <a id="calories-button" asp-area="" asp-controller="MyViewModels" asp-action="Index">
+                            <a id="calories-button" asp-area="" asp-controller="Home" asp-action="Calories">
                                 <span class="glyphicon glyphicon-cutlery"></span>Kalori Değerleri
                             </a>
                         </li>
                         <li>
-                            <a id="howmany-button" asp-area="" asp-controller="Baklagils" asp-action="Index">
+                            <a id="howmany-button" asp-area="" asp-controller="Home" asp-action="HowMany">
                                 <span class="glyphicon glyphicon-question-sign"></span>Kaç Kalori Aldım
                             </a>
                         </li>

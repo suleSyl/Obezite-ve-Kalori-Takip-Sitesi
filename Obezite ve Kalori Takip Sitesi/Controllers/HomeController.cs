@@ -36,7 +36,6 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Controllers
         public IActionResult HowMany()
         {
             ViewData["Message"] = "Kaç Kalori aldım sayfası";
-
             return View();
         }
 

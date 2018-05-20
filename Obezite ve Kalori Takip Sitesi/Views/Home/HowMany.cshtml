@@ -1,6 +1,227 @@
 ﻿@{
-    ViewData["Title"] = "HowMany";
+    ViewData["Title"] = "Kaç Kalori Aldım";
 }
-
-<h2>HowMany</h2>
+<div id="exp">Bu hesaplama programı ile dilediğiniz besin maddelerinin 100 gramının içerdiği toplam kalori miktarını öğrenebilirsiniz.</div>
+<div class="gıda-türü">Meyveler</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="meyveler" value=52><span>Ahududu</span><br>
+            <input type="checkbox" name="meyveler" value=43><span>Böğürtlen</span><br>
+            <input type="checkbox" name="meyveler" value=74><span>İncir</span><br>
+            <input type="checkbox" name="meyveler" value=61><span>Kivi</span><br>
+            <input type="checkbox" name="meyveler" value=32><span>Çilek</span>
+        </td>
+        <td>
+            <input type="checkbox" name="meyveler" value=50><span>Ananas</span><br>
+            <input type="checkbox" name="meyveler" value=43><span>Dut</span><br>
+            <input type="checkbox" name="meyveler" value=30><span>Karpuz</span><br>
+            <input type="checkbox" name="meyveler" value=89><span>Muz</span><br>
+            <input type="checkbox" name="meyveler" value=69><span>Üzüm</span>
+        </td>
+        <td>
+            <input type="checkbox" name="meyveler" value=57><span>Armut</span><br>
+            <input type="checkbox" name="meyveler" value=52><span>Elma</span><br>
+            <input type="checkbox" name="meyveler" value=48><span>Kayısı</span><br>
+            <input type="checkbox" name="meyveler" value=83><span>Nar</span><br>
+            <input type="checkbox" name="meyveler" value=39><span>Şeftali</span>
+        </td>
+        <td>
+            <input type="checkbox" name="meyveler" value=57><span>Ayva</span><br>
+            <input type="checkbox" name="meyveler" value=46><span>Erik</span><br>
+            <input type="checkbox" name="meyveler" value=50><span>Kiraz</span><br>
+            <input type="checkbox" name="meyveler" value=47><span>Portakal</span>
+        </td>
+    </tr>
+</table>
+<input id="meyveler" type="text" name="meyve-kalori" value="0">
+<span>Kalori</span>
+<div class="gıda-türü">Sebzeler</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="sebzeler" value=33><span>Bamya</span><br>
+            <input type="checkbox" name="sebzeler" value=47><span>Enginar</span><br>
+            <input type="checkbox" name="sebzeler" value=49><span>Kıvırcık Lahana</span><br>
+            <input type="checkbox" name="sebzeler" value=25><span>Patlıcan</span><br>
+            <input type="checkbox" name="sebzeler" value=40><span>Soğan</span>
+        </td>
+        <td>
+            <input type="checkbox" name="sebzeler" value=27><span>Biber</span><br>
+            <input type="checkbox" name="sebzeler" value=23><span>Ispanak</span><br>
+            <input type="checkbox" name="sebzeler" value=22><span>Mantar</span><br>
+            <input type="checkbox" name="sebzeler" value=61><span>Pırasa</span><br>
+            <input type="checkbox" name="sebzeler" value=28><span>Turp</span>
+        </td>
+        <td>
+            <input type="checkbox" name="sebzeler" value=34><span>Brokoli</span><br>
+            <input type="checkbox" name="sebzeler" value=26><span>Kabak</span><br>
+            <input type="checkbox" name="sebzeler" value=15><span>Marul</span><br>
+            <input type="checkbox" name="sebzeler" value=25><span>Roka</span>
+        </td>
+        <td>
+            <input type="checkbox" name="sebzeler" value=18><span>Domates</span><br>
+            <input type="checkbox" name="sebzeler" value=25><span>Karnabahar</span><br>
+            <input type="checkbox" name="sebzeler" value=77><span>Patates</span><br>
+            <input type="checkbox" name="sebzeler" value=16><span>Salatalık</span>
+        </td>
+    </tr>
+</table>
+<input id="sebzeler" type="text" name="sebze-kalori" value="0">
+<span>Kalori</span>
+<div class="gıda-türü">Baklagiller</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="baklagiller" value=84><span>Bakla</span><br>
+            <input type="checkbox" name="baklagiller" value=336><span>Kuru Fasulye</span><br>
+            <input type="checkbox" name="baklagiller" value=147><span>Soya Fasulyesi</span>
+        </td>
+        <td>
+            <input type="checkbox" name="baklagiller" value=42><span>Bezelye</span><br>
+            <input type="checkbox" name="baklagiller" value=124><span>Kırmızı Barbunya</span><br>
+            <input type="checkbox" name="baklagiller" value=567><span>Yer Fıstığı</span>
+        </td>
+        <td>
+            <input type="checkbox" name="baklagiller" value=341><span>Börülce</span><br>
+            <input type="checkbox" name="baklagiller" value=329><span>Kırmızı Mercimek</span><br>
+            <input type="checkbox" name="baklagiller" value=31><span>Yeşil Fasulye</span>
+        </td>
+        <td>
+            <input type="checkbox" name="baklagiller" value=210><span>Kestane İçi</span><br>
+            <input type="checkbox" name="baklagiller" value=364><span>Nohut</span><br>
+            <input type="checkbox" name="baklagiller" value=257><span>Yeşil Mercimek</span>
+        </td>
+    </tr>
+</table>
+<input id="baklagiller" type="text" name="baklagil-kalori" value="0">
+<span>Kalori</span>
+<div class="gıda-türü">Etler</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="etler" value=138><span>Bonfile</span><br>
+            <input type="checkbox" name="etler" value=219><span>Tavuk</span><br>
+            <input type="checkbox" name="etler" value=452><span>Sucuk</span>
+        </td>
+        <td>
+            <input type="checkbox" name="etler" value=246><span>Dana Kıyması</span><br>
+            <input type="checkbox" name="etler" value=156><span>Şinitzel</span><br>
+            <input type="checkbox" name="etler" value=278><span>Biftek</span>
+        </td>
+        <td>
+            <input type="checkbox" name="etler" value=190><span>Dana Eti (Orta Yağlı)</span><br>
+            <input type="checkbox" name="etler" value=446><span>Salam</span><br>
+            <input type="checkbox" name="etler" value=189><span>Hindi</span>
+        </td>
+        <td>
+            <input type="checkbox" name="etler" value=276><span>Kuzu Pirzola</span><br>
+            <input type="checkbox" name="etler" value=295><span>Sosis</span>
+        </td>
+    </tr>
+</table>
+<input id="etler" type="text" name="et-kalori" value="0">
+<span>Kalori</span>
+<div class="gıda-türü">Süt ve Yumurta Ürünleri</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=95><span>Yoğurt (Yağlı)</span><br>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=413><span>Kaşar Peyniri (Yağlı)</span><br>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=98><span>Süzme Peynir</span>
+        </td>
+        <td>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=68><span>Süt (Yağlı)</span><br>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=440><span>Parmesan Peyniri (Yağlı)</span><br>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=45><span>Soya Sütü</span>
+        </td>
+        <td>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=125><span>Yoğurt (Yağlı, Meyveli)</span><br>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=80><span>Yumurta</span><br>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=496><span>Süt Tozu</span>
+        </td>
+        <td>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=275><span>Beyaz Peynir (Yağlı)</span><br>
+            <input type="checkbox" name="süt-ve-yumurta-ürünleri" value=69><span>Keçi Sütü</span>
+        </td>
+    </tr>
+</table>
+<input id="süt-ve-yumurta-ürünleri" type="text" name="süt-yumurta-kalori" value="0">
+<span>Kalori</span>
+<div class="gıda-türü">Deniz Ürünleri</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="deniz-ürünleri" value=190><span>Alabalık</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=175><span>Kalamar</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=208><span>Sardalya</span>
+        </td>
+        <td>
+            <input type="checkbox" name="deniz-ürünleri" value=124><span>Deniz Levreği</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=159><span>Lüfer</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=162><span>Sazan</span>
+        </td>
+        <td>
+            <input type="checkbox" name="deniz-ürünleri" value=264><span>Havyar</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=90><span>Mezgit</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=206><span>Somon</span>
+        </td>
+        <td>
+            <input type="checkbox" name="deniz-ürünleri" value=89><span>Istakoz</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=172><span>Midye</span><br>
+            <input type="checkbox" name="deniz-ürünleri" value=132><span>Ton Balığı</span>
+        </td>
+    </tr>
+</table>
+<input id="deniz-ürünleri" type="text" name="deniz-ürünü-kalori" value="0">
+<span>Kalori</span>
+<div class="gıda-türü">Kuruyemişler</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="kuruyemişler" value=600><span>Badem</span><br>
+            <input type="checkbox" name="kuruyemişler" value=600><span>Çam Fıstığı</span><br>
+            <input type="checkbox" name="kuruyemişler" value=578><span>Ay Çekirdeği</span>
+        </td>
+        <td>
+            <input type="checkbox" name="kuruyemişler" value=603><span>Hindistan Cevizi</span><br>
+            <input type="checkbox" name="kuruyemişler" value=549><span>Ceviz</span><br>
+            <input type="checkbox" name="kuruyemişler" value=267><span>Leblebi</span>
+        </td>
+        <td>
+            <input type="checkbox" name="kuruyemişler" value=650><span>Fındık</span><br>
+            <input type="checkbox" name="kuruyemişler" value=478><span>Patlamış Mısır</span>
+        </td>
+        <td>
+            <input type="checkbox" name="kuruyemişler" value=560><span>Fıstık</span><br>
+            <input type="checkbox" name="kuruyemişler" value=571><span>Kabak Çekirdeği</span>
+        </td>
+    </tr>
+</table>
+<input id="kuruyemişler" type="text" name="kuruyemiş-kalori" value="0">
+<span>Kalori</span>
+<div class="gıda-türü">Yağlar</div>
+<table class="gıda">
+    <tr>
+        <td>
+            <input type="checkbox" name="yağlar" value=884><span>Ayçiçeği Yağı</span><br>
+            <input type="checkbox" name="yağlar" value=717><span>Margarin</span><br>
+            <input type="checkbox" name="yağlar" value=884><span>Zeytinyağı</span>
+        </td>
+        <td>
+            <input type="checkbox" name="yağlar" value=1000><span>Balık Yağı</span><br>
+            <input type="checkbox" name="yağlar" value=882><span>Palm Yağı</span>
+        </td>
+        <td>
+            <input type="checkbox" name="yağlar" value=857><span>Fındık Yağı</span><br>
+            <input type="checkbox" name="yağlar" value=884><span>Susam Yağı</span>
+        </td>
+        <td>
+            <input type="checkbox" name="yağlar" value=884><span>Kanola Yağı</span><br>
+            <input type="checkbox" name="yağlar" value=720><span>Tereyağı</span>
+        </td>
+    </tr>
+</table>
+<input id="yağlar" type="text" name="yağ-kalori" value="0">
+<span>Kalori</span>
 

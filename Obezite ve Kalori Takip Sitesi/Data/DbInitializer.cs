@@ -23,7 +23,6 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
             b.AddRange(new List<Baklagil>
             {
                 new Baklagil("Bakla", 84),
-                new Baklagil("Bamya", 33),
                 new Baklagil("Bezelye", 42),
                 new Baklagil("Börülce", 341),
                 new Baklagil("Kestane içi", 210),
@@ -74,7 +73,7 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
             {
                 new Et("Bonfile", 138),
                 new Et("Dana Kıyması", 246),
-                new Et("Dana Eti (Orta Yağlı", 190),
+                new Et("Dana Eti (Orta Yağlı)", 190),
                 new Et("Kuzu Pirzola", 276),
                 new Et("Tavuk", 219),
                 new Et("Şinitzel", 156),
@@ -149,7 +148,6 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
             s.AddRange(new List<Sebze>
             {
                 new Sebze("Bamya", 33),
-                new Sebze("Bezelye", 81),
                 new Sebze("Biber", 27),
                 new Sebze("Brokoli", 34),
                 new Sebze("Domates", 18),
@@ -229,7 +227,6 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
             b.AddRange(new List<Baklagil>
             {
                 new Baklagil("Bakla", 84),
-                new Baklagil("Bamya", 33),
                 new Baklagil("Bezelye", 42),
                 new Baklagil("Börülce", 341),
                 new Baklagil("Kestane içi", 210),
@@ -330,7 +327,6 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
             s.AddRange(new List<Sebze>
             {
                 new Sebze("Bamya", 33),
-                new Sebze("Bezelye", 81),
                 new Sebze("Biber", 27),
                 new Sebze("Brokoli", 34),
                 new Sebze("Domates", 18),
@@ -378,7 +374,7 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
                 new Yağ("Fındık Yağı", 857),
                 new Yağ("Kanola Yağı", 884),
                 new Yağ("Margarin", 717),
-                new Yağ("PalmYağı", 882),
+                new Yağ("Palm Yağı", 882),
                 new Yağ("Susam Yağı", 884),
                 new Yağ("Tereyağı", 720),
                 new Yağ("Zeytinyağı", 884),

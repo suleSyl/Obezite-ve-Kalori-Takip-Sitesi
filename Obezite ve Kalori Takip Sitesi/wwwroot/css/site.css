@@ -23,17 +23,17 @@
     border: 0;
 }
 
-@media (max-width: 767px) {
-    #img1-span {
-        line-height: 1.5;
-        height: 100px;
-        font-size: 1.2em;
+@media (max-width: 767px) {   
+    #img1 img{
+        height:450px;
     }
 
-    #img3-span {
-        font-size: 1.4em;
-        line-height: 1.55;
-        height: 40px;
+    #img2 img{
+        height:450px;
+    }
+
+    #img3 img {
+        height: 450px;
     }
 }
 
@@ -97,25 +97,27 @@
     margin-bottom: 35px;
 }
 
-/*********************************************END HEADER *************************************************/
+/*********************************************end Header *************************************************/
 
 tr:nth-child(even) {
     background-color: #fff2e6;
 }
 
-table {
+table.table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;    
+    width: 70%;    
     font-size:.9em;
 }
 
-td, th {
-    border-bottom: 1px solid #dddddd;
+table.table td, table.table th, table.table tr{
+    border-top-width:150px;
     text-align: left;
     padding: 8px;
-    width:150px;
-}  /************************************end Kalori Değerleri***********************************************/
+    width: 50%;
+}  
+
+/************************************end Kalori Değerleri***********************************************/
 
 * {
     box-sizing: border-box;
@@ -138,11 +140,11 @@ td, th {
   vertical-align: middle;
 }
 
-#img1, #img2, #img3 {    
+#img1, #img2, #img3 {
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin:10px;
+    margin: 10px;
 }
 
 #img2{
@@ -174,7 +176,7 @@ td, th {
     text-transform: uppercase;
     background-color: #000;
     color: #fff;
-    opacity: .75;    
+    opacity: .85;
 }
 
 #img1-span {
@@ -192,7 +194,7 @@ td, th {
     font-size: 1.4em;
     line-height: 1.55;
     height:65px;
-}      /************************end index*************************************/
+}      /****************************************end index************************************************/
 
 footer {
     background-color: #004d1a;
@@ -204,6 +206,35 @@ footer {
 footer p{
     color:white;
 }
+/****************************************end footer************************************************/
+#exp {
+    margin-top: 26px;
+}
+
+table.gıda span {
+    margin-left: 5px;
+}
+
+.gıda-türü {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+table.gıda {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: .9em;
+}
+
+table.gıda td, table.gıda th {
+    border-bottom: 0;
+    text-align: left;
+    padding: 8px;
+    width: 150px;
+} 
+/****************************************end Kaç Kalori Aldım************************************************/
 
 
 

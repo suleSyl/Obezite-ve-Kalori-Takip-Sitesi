@@ -10,11 +10,10 @@ namespace Obezite_ve_Kalori_Takip_Sitesi.Data
         public static void Initialize(FoodContext context)
         {
             context.Database.EnsureCreated();
-
-            // Look for any students.
+                        
             if (context.Baklagiller.Any())
             {
-                return;   // DB has been seeded
+                return;  
             }                              
 
             bütünGıdalar = new MyViewModel();
